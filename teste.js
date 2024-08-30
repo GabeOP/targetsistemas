@@ -3,9 +3,18 @@ let sequencia = [];
 sequencia.push(0);
 sequencia.push(1);
 let n = 10;
+let pertenceOuNao = 89
 
 for(let i = 0; i < n; i++) {
-  sequencia.push(sequencia[i] + sequencia[i+1])
+  sequencia.push(sequencia[i] + sequencia[i+1]);
+}
+
+for(let i = 0; i < sequencia.length; i++) {
+  if(sequencia[i] === pertenceOuNao) {
+    console.log(sequencia);
+    console.log("Esse número pertence à sequência.");
+    return;
+  }
 }
 
 console.log(sequencia);
